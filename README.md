@@ -21,9 +21,16 @@
 CRC is the same for header and whole packet
 
 **Table of radio commands **
-| **cmd meaning**  | **opCode** 1B  |**action flags** 1B |**parameters** NB|  **retVal** 1B
+| **cmd meaning**  | **opCode** 1B  | |**parameters** NB|  **retVal** 1B
 |---|---|--|--|--|
-| TxFreq  | 1  | yes | Frequency (4B)| 1 - Succes /0 - failure|
-| RxFreq  | 2  | yes |  Frequency (4B)| 1 - Succes /0 - failure|
-| TxPower  | 3  | yes | Power (1B)| 1 - Succes /0 - failure|
-| TxSF  | 4  | yes | Spreading factor SF5-SF12 (1B)| 1 - Succes /0 - failure|
+| SetAUXPin_1  | 1  |  Log level 1/0 (1 B)| |
+| SetAUXPin_2  | 2  |  Log level 1/0 (1 B)| |
+| SetAUXPin_3  | 3  |  Log level 1/0 (1 B)| |
+| SetAUXPin_4  | 4  |  Log level 1/0 (1 B)| |
+| ReadtAUXPin_5  | 5  |  Log level 1/0 (1 B)| |
+| ReadtAUXPin_6  | 6  |  Log level 1/0 (1 B)| |
+| ButtonPushed  | 7  |  Button (8 nebo 7 - dle tlacitka) (1 B)| |
+| SetAUX1_Blinking  | 8  |  TODO period time (4 B)| |
+| SetAUX2_Blinking  | 8  |  TODO period time (4 B)| |
+| SetAUX3_Blinking  | 8  |  TODO period time (4 B)| |
+| SetAUX4_Blinking  | 8  |  TODO period time (4 B)| |
