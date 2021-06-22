@@ -27,10 +27,15 @@ CRC is the same for header and whole packet
 | SetAUXPin_2  | 2  |  Log level 1/0 (1 B)| |
 | SetAUXPin_3  | 3  |  Log level 1/0 (1 B)| |
 | SetAUXPin_4  | 4  |  Log level 1/0 (1 B)| |
-| ReadtAUXPin_5  | 5  |  Log level 1/0 (1 B)| |
-| ReadtAUXPin_6  | 6  |  Log level 1/0 (1 B)| |
-| ButtonPushed  | 7  |  Button (8 nebo 7 - dle tlacitka) (1 B)| |
+| ReadtAUXPin_7  | 7  |  Log level 1/0 (1 B)| |
+| ReadtAUXPin_8  | 8  |  Log level 1/0 (1 B)| |
+| ButtonPushed  | 7  |  Button (5 nebo 6 - dle tlacitka) (1 B)| |
 | SetAUX1_Blinking  | 8  |  TODO period time (4 B)| |
-| SetAUX2_Blinking  | 8  |  TODO period time (4 B)| |
-| SetAUX3_Blinking  | 8  |  TODO period time (4 B)| |
-| SetAUX4_Blinking  | 8  |  TODO period time (4 B)| |
+| SetAUX2_Blinking  | 9  |  TODO period time (4 B)| |
+| SetAUX3_Blinking  | 10  |  TODO period time (4 B)| |
+| SetAUX4_Blinking  | 11  |  TODO period time (4 B)| |
+
+
+AUX 4,3,2,1 => Vystupy
+AUX 5,6 => Tlacitka reagujici na sestupnou hranu
+AUX 8,7 => Pro cteni vstupu
