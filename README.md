@@ -27,8 +27,8 @@ CRC is the same for header and whole packet
 | SetAUXPin_2  | 2  |  Log level 1/0 (1 B)| |
 | SetAUXPin_3  | 3  |  Log level 1/0 (1 B)| |
 | SetAUXPin_4  | 4  |  Log level 1/0 (1 B)| |
-| ReadtAUXPin_7  | 7  |  Log level 1/0 (1 B)| |
-| ReadtAUXPin_8  | 8  |  Log level 1/0 (1 B)| |
+| ReadAUXPin_7  | 7  |  Log level 1/0 (1 B)| |
+| ReadAUXPin_8  | 8  |  Log level 1/0 (1 B)| |
 | ButtonPushed  | 7  |  Button (5 nebo 6 - dle tlacitka) (1 B)| |
 | SetAUX1_Blinking  | 8  |  TODO period time (4 B)| |
 | SetAUX2_Blinking  | 9  |  TODO period time (4 B)| |
