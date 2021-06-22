@@ -36,6 +36,6 @@ CRC is the same for header and whole packet
 | SetAUX4_Blinking  | 11  |  TODO period time (4 B)| |
 
 
-AUX 4,3,2,1 => Vystupy
-AUX 5,6 => Tlacitka reagujici na sestupnou hranu
-AUX 8,7 => Pro cteni vstupu
+- AUX 4,3,2,1 => Vystupy
+- AUX 5,6 => Tlacitka reagujici na sestupnou hranu
+- AUX 8,7 => Pro cteni vstupu
