@@ -1,0 +1,7 @@
+.bin
+.depend
+.map
+.settings/
+.mxproject
+.launch
+/Debug/
