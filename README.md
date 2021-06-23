@@ -9,7 +9,7 @@
 **Header**
 | 1B  |  2B | 1B  | 
 |---|---|---|
-| size of payload  |RFU| crc Header  
+| size of payload  |RFU = zatim nepouzito| crc Header  
 
 **Payload**
 | 1B    | NB|
