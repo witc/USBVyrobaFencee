@@ -39,3 +39,5 @@ CRC is the same for header and whole packet
 - AUX 4,3,2,1 => Vystupy
 - AUX 5,6 => Tlacitka reagujici na sestupnou hranu
 - AUX 8,7 => Pro cteni vstupu
+
+![IMG_20210623_103957](https://user-images.githubusercontent.com/13749560/123067524-5aedd280-d411-11eb-891e-3f4466e4b76a.jpg)
