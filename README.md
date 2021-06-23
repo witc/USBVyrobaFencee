@@ -21,7 +21,7 @@
 CRC is the same for header and whole packet
 
 **Table of radio commands**
-| **cmd meaning**  | **opCode** 1B  | |**parameters** NB|  **retVal** 1B
+| **cmd meaning**  | **opCode** 1B  |**parameters** NB|  **retVal** 1B
 |---|---|--|--|--|
 | SetAUXPin_1  | 1  |  Log level 1/0 (1 B)| |
 | SetAUXPin_2  | 2  |  Log level 1/0 (1 B)| |
