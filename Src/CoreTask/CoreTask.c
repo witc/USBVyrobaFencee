@@ -39,7 +39,9 @@ extern osTimerId TimerSystemLEDHandle;
 void CallbackButtonCheck(void const * argument)
 {
 	DATA_QUEUE	SendData;
+	DATA_QUEUE	SendData2;
 	SendData.pointer = NULL;
+	SendData2.pointer = NULL;
 
 	uint32_t pin = LL_GPIO_ReadInputPort(AUX_6_GPIO_Port);
 	if((pin & AUX_6_Pin)==0)
@@ -54,9 +56,9 @@ void CallbackButtonCheck(void const * argument)
 	if((pin & AUX_5_Pin)==0)
 	{
 		/* stisknuto */
-		SendData.Address = ADDR_CORE_BUTTON_PUSHED;
-		SendData.Data = AUX_5_Pin;
-		xQueueSend(QueueCoreHandle, &SendData, portMAX_DELAY);
+		SendData2.Address = ADDR_CORE_BUTTON_PUSHED;
+		SendData2.Data = AUX_5_Pin;
+		xQueueSend(QueueCoreHandle, &SendData2, portMAX_DELAY);
 
 	}
 
@@ -274,6 +276,12 @@ void TaskCore(void const * argument)
    InitUart();
    osTimerStart(TimerLEDHandle,500);
 
+   for(uint8_t led=0;led<6;led++)
+   {
+   	  LL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
+   	  osDelay(100);
+   }
+
    for(;;)
    {
 	   ReturnValue = xQueueReceive(QueueCoreHandle, &ReceiveData, portMAX_DELAY);
@@ -308,11 +316,11 @@ void TaskCore(void const * argument)
 
 				if(ReceiveData.Data == AUX_5_Pin)
 				{
-					SendUartMsg(7,5,1);
+					SendUartMsg(7,5,2);
 				}
 				else if(ReceiveData.Data == AUX_6_Pin)
 				{
-					SendUartMsg(7,6,1);
+					SendUartMsg(7,6,2);
 				}
 
 				break;

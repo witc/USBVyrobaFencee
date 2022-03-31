@@ -200,10 +200,14 @@ void StartTaskCore(void const * argument)
 /* USER CODE END Header_StartRfTask */
 void StartRfTask(void const * argument)
 {
+#if (USE_WITH_RF == true)
   /* USER CODE BEGIN StartRfTask */
   /* Infinite loop */
   RFTask(argument);
   /* USER CODE END StartRfTask */
+#else
+  osDelay(UINT32_MAX);
+#endif
 }
 
 /* Callback_LED function */

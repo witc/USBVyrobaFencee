@@ -335,11 +335,7 @@ void RFTask (void const * argument)
   myChannel = xTraceRegisterString("RF_TASK");
 #endif
 
-  for(uint8_t led=0;led<6;led++)
-  {
-	  LL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
-	  osDelay(100);
-  }
+
 
  //SET Continous TX
 //  RadioSetTxContinuousWave(FREQ_869_525_MHZ,22,0);
