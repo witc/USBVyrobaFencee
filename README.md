@@ -14,7 +14,7 @@
 **Payload**
 | 1B    | NB|
 |---|---|
-| Command (opCode) | |   
+| Command (opCode) | dalsi parametry k cmd - viz tabulka nize |   
 
 
 **CRC8 implementation with polynom = x7+ x6+ x4+ x2+ x0 (0xD5)**
